@@ -48,6 +48,7 @@ variable "public_ip_name" {
   default     = "example-pip"
 }
 
+
 variable "vm_name" {
   description = "Name for the virtual machine"
   default     = "example-machine"
