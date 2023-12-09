@@ -39,8 +39,10 @@ pipeline {
         stage('Deploy Terraform Infrastructure') {
             steps {
                 script {
-                    echo "Deploying Terraform infrastructure"
-                    sh 'terraform apply -auto-approve'
+                 echo "Deploying Terraform infrastructure"
+                    // Provide variable values using -var option
+                    sh "terraform apply -auto-approve -var 'admin_username=linuxvm' -var 'admin_password=Kavya@1997@1997'"
+                }
                 }
             }
         }
