@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     echo "Installing Azure CLI"
-                    sh 'curl -sL https://aka.ms/InstallAzureCLIDeb | bash'
+                    sh 'sudo curl -sL https://aka.ms/InstallAzureCLIDeb | bash'
                 }
             }
         }
