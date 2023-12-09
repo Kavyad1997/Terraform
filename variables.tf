@@ -1,6 +1,6 @@
 variable "resource_group_name" {
   description = "Name for the resource group"
-  default     = "KavyaResourceGroup"
+  default     = "KavyaNewResourceGroup"
 }
 
 variable "location" {
