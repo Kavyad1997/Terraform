@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
 
@@ -12,7 +13,7 @@ pipeline {
             steps {
                 script {
                     echo "Installing Azure CLI"
-                    sh 'curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash'
+                    sh 'curl -sL https://aka.ms/InstallAzureCLIDeb | bash'
                 }
             }
         }
